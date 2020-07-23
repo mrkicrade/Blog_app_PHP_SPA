@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<nav id="firstNav" class="navbar navbar-expand navbar-light bg-light">
+		<!-- <a href="index.html" class="navbar-brand">Blog</a> -->
+		<button id="brandBtn" class="btn btn-light">Blog</button>
+		<ul class="navbar-nav ml-auto">
+			<button id="loginRegisterBtn" class="btn btn-primary float-right">Login / Register</button>
+		</ul>
+	</nav>
+
+	<nav id="loggedNav" class="navbar navbar-expand navbar-light bg-light">
+		<!-- <a href="index.html" class="navbar-brand">Blog</a> -->
+		<button id="brandBtn2" class="btn btn-light">Blog</button>
+		<ul class="navbar-nav float-right">
+				<button id="myPostsBtn" class="btn btn-primary float-right mr-3">My Posts</button>
+				<button id="addPostBtn" class="btn btn-primary mr-3">Add Post</button>
+				<button id="logoutBtn" class="btn btn-primary ">Logout</button>
+		</ul>
+	</nav>
+	
+	<div class="jumbotron text-center">
+		<h4>Blog</h4>
+	</div>
+
+	<div id="mainRow" class="container">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div id="blogs" class="row">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="loginRegisterRow" class="container">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div class="row">
+					<div class="col-6">
+						<h4 class="mb-5">Login</h4>
+							<!-- <input id="loginName" type="text" placeholder="name" class="form-control" required><br> -->
+						<input id="loginMail" type="email" placeholder="email" class="form-control" required><br>
+		                <input id="loginPassword" type="password" placeholder="password" class="form-control" required><br><br>
+		                <button id="loginBtn" class="form-control btn btn-primary">Login</button>
+					</div>
+					<div class="col-6">
+			            <h4>Register</h4>
+		                <input id="registerName" type="text" placeholder="name" class="form-control" required><br>
+		                <input id="registerMail" type="email" placeholder="email" class="form-control" required><br>
+		                <input id="registerPassword" type="password" placeholder="password" class="form-control" required><br>
+		                <button id="registerBtn" class="form-control btn btn-success">Register</button>
+			        </div>
+				</div>
+				</div>
+			</div>
+	</div>
+
+	<div id="addPostRow" class="container">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div class="row">
+					<div class="col-6 offset-3 text-center">
+						<h4>Add Post</h4><br><br>
+						<input id="addTitle" type="text" placeholder="Add Title" class="form-control text-center"><br>
+						<textarea name="addDescription" id="addDescription" cols="60" rows="10" placeholder="Add Text" class="text-center"></textarea><br><br>
+						<button id="addNewPostBtn" type="submit" class="btn btn-primary form-control">Add Post</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="allMyPosts" class="container">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div id="myPosts" class="row">
+					<h1>Naslov</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myPostEdit" class="container">
+		<h3 class="text-center">Edit My Post</h3>
+		<br><br>
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div id="showMyEditPost">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wholePost" class="container">
+		<div class="row">
+			<div class="col-6 offset-3">
+				<div id="showWholePost">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="allPostsRow" class="container">
+		<div class="row">
+			<div class="col-10 offset-1">
+				<div id="allPostsShow" class="row">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/DB.js"></script>
+	<script src="js/Users.js"></script>
+	<script src="js/Posts.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
